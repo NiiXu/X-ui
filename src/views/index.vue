@@ -1,17 +1,90 @@
 <template>
 <div class="index">
   <div>
-    <x-input value="中文"></x-input>
-    <x-input value="中文" disabled></x-input>
-    <x-input value="中文" readonly></x-input>
+    <x-row class="demoRow">
+      <x-col span="8">
+        <div class="demoCol">8</div>
+      </x-col>
+      <x-col span="8">
+        <div class="demoCol">8</div>
+      </x-col>
+      <x-col span="8">
+        <div class="demoCol">8</div>
+      </x-col>
+    </x-row>
+    <x-row class="demoRow">
+      <x-col span="6">
+        <div class="demoCol">6</div>
+      </x-col>
+      <x-col span="6">
+        <div class="demoCol">6</div>
+      </x-col>
+      <x-col span="6">
+        <div class="demoCol">6</div>
+      </x-col>
+      <x-col span="6">
+        <div class="demoCol">6</div>
+      </x-col>
+    </x-row>
+    <x-row class="demoRow">
+      <x-col span="4">
+        <div class="demoCol">4</div>
+      </x-col>
+      <x-col span="4">
+        <div class="demoCol">4</div>
+      </x-col>
+      <x-col span="4">
+        <div class="demoCol">4</div>
+      </x-col>
+      <x-col span="4">
+        <div class="demoCol">4</div>
+      </x-col>
+      <x-col span="4">
+        <div class="demoCol">4</div>
+      </x-col>
+      <x-col span="4">
+        <div class="demoCol">4</div>
+      </x-col>
+    </x-row>
+    <x-row class="demoRow">
+      <x-col span="2">
+        <div class="demoCol">2</div>
+      </x-col>
+      <x-col span="2">
+        <div class="demoCol">2</div>
+      </x-col>
+      <x-col span="2">
+        <div class="demoCol">2</div>
+      </x-col>
+      <x-col span="2">
+        <div class="demoCol">2</div>
+      </x-col>
+      <x-col span="2">
+        <div class="demoCol">2</div>
+      </x-col>
+      <x-col span="2">
+        <div class="demoCol">2</div>
+      </x-col>
+      <x-col span="2">
+        <div class="demoCol">2</div>
+      </x-col>
+      <x-col span="2">
+        <div class="demoCol">2</div>
+      </x-col>
+      <x-col span="2">
+        <div class="demoCol">2</div>
+      </x-col>
+      <x-col span="2">
+        <div class="demoCol">2</div>
+      </x-col>
+      <x-col span="2">
+        <div class="demoCol">2</div>
+      </x-col>
+      <x-col span="2">
+        <div class="demoCol">2</div>
+      </x-col>
+    </x-row>
   </div>
-  <div>
-    <x-input v-model="value"></x-input>
-    <div>
-      value: {{value}}
-    </div>
-  </div>
-
 </div>
 </template>
 
@@ -40,5 +113,15 @@ html {
 .index{
   margin: 20px;
 }
-
+.demoRow{
+  margin: 10px 0;
+}
+.demoCol {
+  height: 50px;
+  border: 1px solid #ccc;
+  background: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 </style>
