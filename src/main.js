@@ -7,6 +7,7 @@ import Radio from "./components/Radio";
 import Button from "./components/Button";
 import ButtonGroup from "./components/ButtonGroup";
 import Icon from "./components/Icon"
+import Input from "./components/input"
 
 
 Vue.config.productionTip = false
@@ -16,6 +17,7 @@ Vue.component('x-radio',Radio)
 Vue.component("x-button",Button)
 Vue.component('x-buttongroup',ButtonGroup)
 Vue.component('x-icon',Icon)
+Vue.component('i-input',Input)
 
 new Vue({
   router,
