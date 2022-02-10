@@ -1,15 +1,17 @@
 <template>
-<div>
-  tabs-body
-</div>
+  <div class="tabs-body">
+    <slot></slot>
+  </div>
 </template>
-
 <script>
 export default {
-  name: "Tabs-bodys"
+  name: 'GuluTabsBody',
+  inject: ['eventBus'],
+  created(){
+  }
 }
 </script>
-
-<style lang="scss" scoped>
-
+<style>
+.tabs-body {
+}
 </style>
