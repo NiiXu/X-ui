@@ -1,15 +1,17 @@
 <template>
 <div class="index">
-  <x-button>默认按钮</x-button>
-  <x-button icon="setting">默认按钮</x-button>
-  <x-button :loading="true">默认按钮</x-button>
-  <x-button disabled>默认按钮</x-button>
+  <div>
+    <x-input value="中文"></x-input>
+    <x-input value="中文" disabled></x-input>
+    <x-input value="中文" readonly></x-input>
+  </div>
+  <div>
+    <x-input v-model="value"></x-input>
+    <div>
+      value: {{value}}
+    </div>
+  </div>
 
-  <x-buttongroup>
-    <x-button icon="left">上一页</x-button>
-    <x-button>更多</x-button>
-    <x-button icon="right" icon-position="right">下一页</x-button>
-  </x-buttongroup>
 </div>
 </template>
 
@@ -18,7 +20,7 @@ export default {
   name:'index',
   data(){
     return{
-      x:'0'
+      value:'0'
     }
   }
 }

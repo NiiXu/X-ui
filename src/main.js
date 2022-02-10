@@ -17,7 +17,7 @@ Vue.component('x-radio',Radio)
 Vue.component("x-button",Button)
 Vue.component('x-buttongroup',ButtonGroup)
 Vue.component('x-icon',Icon)
-Vue.component('i-input',Input)
+Vue.component('x-input',Input)
 
 new Vue({
   router,
