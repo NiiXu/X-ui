@@ -16,6 +16,8 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Content from "./components/Content";
 import Sider from "./components/Sider";
+import Slides from "./components/Slides";
+import SlidesItem from "./components/Slides-item";
 
 Vue.config.productionTip = false
 
@@ -33,6 +35,8 @@ Vue.component('x-header',Header)
 Vue.component('x-content',Content)
 Vue.component('x-footer',Footer)
 Vue.component('x-sider',Sider)
+Vue.component('x-slides',Slides)
+Vue.component('x-slides-item',SlidesItem)
 
 
 
