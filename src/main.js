@@ -10,6 +10,7 @@ import Icon from "./components/Icon"
 import Input from "./components/input"
 import Col from "./components/Col";
 import Row from "./components/Row";
+import Popover from "./components/Popover";
 
 Vue.config.productionTip = false
 
@@ -21,6 +22,7 @@ Vue.component('x-icon',Icon)
 Vue.component('x-input',Input)
 Vue.component('x-col',Col)
 Vue.component('x-row', Row)
+Vue.component("x-popover",Popover)
 
 new Vue({
   router,
