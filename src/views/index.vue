@@ -1,35 +1,16 @@
 <template>
 <div class="index">
-  <x-layout style="color: white; margin-bottom:50px;">
-    <x-header style="height: 50px; background:lightskyblue;">
-      header
-    </x-header>
-    <x-content style="height: 100px; background:deepskyblue;">
-      content
-    </x-content>
-    <x-footer style="height: 50px; background:lightskyblue;">
-      footer
-    </x-footer>
-  </x-layout>
-
-  <div>
-    <x-layout style="color: white; overflow:hidden; margin-bottom:50px;">
-      <x-sider style=" background:#ddd; width:200px; color: black;">
-        sider
-      </x-sider>
-      <x-layout>
-        <x-header style="height: 50px; background:lightskyblue;">
-          header
-        </x-header>
-        <x-content style="height: 100px; background:deepskyblue;">
-          content
-        </x-content>
-        <x-footer style="height: 50px; background:lightskyblue;">
-          footer
-        </x-footer>
-      </x-layout>
-    </x-layout>
-  </div>
+  <x-slides :selected.sync="selected">
+    <x-slides-item name="1">
+      <div class="box">1</div>
+    </x-slides-item>
+    <x-slides-item name="2">
+      <div class="box">2</div>
+    </x-slides-item>
+    <x-slides-item name="3">
+      <div class="box">3</div>
+    </x-slides-item>
+  </x-slides>
 </div>
 </template>
 
@@ -38,7 +19,7 @@ export default {
   name:'index',
   data(){
     return{
-      value:'0'
+      selected: "1",
     }
   }
 }
@@ -60,6 +41,15 @@ html {
 }
 .demoRow{
   margin: 10px 0;
+}
+.box{
+  height: 300px;
+  background: blue;
+  color: white;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .demoCol {
   height: 50px;
