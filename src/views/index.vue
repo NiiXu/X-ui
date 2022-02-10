@@ -1,56 +1,34 @@
 <template>
 <div class="index">
-  <x-popover>
-    <x-button>上方弹出</x-button>
-    <template slot="content">
-      弹出内容
-    </template>
-  </x-popover>
-  <x-popover position="bottom">
-    <x-button>下方弹出</x-button>
-    <template slot="content">
-      弹出内容
-    </template>
-  </x-popover>
-  <x-popover position="left">
-    <x-button>左边弹出</x-button>
-    <template slot="content">
-      弹出内容
-    </template>
-  </x-popover>
-  <x-popover position="right">
-    <x-button>右边弹出</x-button>
-    <template slot="content">
-      弹出内容
-    </template>
-  </x-popover>
+  <x-layout style="color: white; margin-bottom:50px;">
+    <x-header style="height: 50px; background:lightskyblue;">
+      header
+    </x-header>
+    <x-content style="height: 100px; background:deepskyblue;">
+      content
+    </x-content>
+    <x-footer style="height: 50px; background:lightskyblue;">
+      footer
+    </x-footer>
+  </x-layout>
 
   <div>
-    <x-popover trigger="hover">
-      <x-button>上方弹出</x-button>
-      <template slot="content">
-        弹出内容
-      </template>
-    </x-popover>
-    <x-popover position="bottom" trigger="hover">
-      <x-button>下方弹出</x-button>
-      <template slot="content">
-        弹出内容
-      </template>
-    </x-popover>
-    <x-popover position="left" trigger="hover">
-      <x-button>左边弹出</x-button>
-      <template slot="content">
-        弹出内容
-      </template>
-    </x-popover>
-    <x-popover position="right" trigger="hover">
-      <x-button>右边弹出</x-button>
-      <template slot="content">
-        弹出内容
-      </template>
-    </x-popover>
-
+    <x-layout style="color: white; overflow:hidden; margin-bottom:50px;">
+      <x-sider style=" background:#ddd; width:200px; color: black;">
+        sider
+      </x-sider>
+      <x-layout>
+        <x-header style="height: 50px; background:lightskyblue;">
+          header
+        </x-header>
+        <x-content style="height: 100px; background:deepskyblue;">
+          content
+        </x-content>
+        <x-footer style="height: 50px; background:lightskyblue;">
+          footer
+        </x-footer>
+      </x-layout>
+    </x-layout>
   </div>
 </div>
 </template>
