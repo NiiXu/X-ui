@@ -18,6 +18,11 @@ import Content from "./components/Content";
 import Sider from "./components/Sider";
 import Slides from "./components/Slides";
 import SlidesItem from "./components/Slides-item";
+import Tabs from "./components/Tabs";
+import TabsHead from "./components/Tabs-head";
+import TabsBody from "./components/Tabs-body";
+import TabsItem from "./components/Tabs-item";
+import TabsPane from "./components/Tabs-pane";
 
 Vue.config.productionTip = false
 
@@ -37,7 +42,12 @@ Vue.component('x-footer',Footer)
 Vue.component('x-sider',Sider)
 Vue.component('x-slides',Slides)
 Vue.component('x-slides-item',SlidesItem)
-
+Vue.component('x-slides',Slides)
+Vue.component('x-tabs',Tabs)
+Vue.component("x-tabs-head", TabsHead)
+Vue.component("x-tabs-body", TabsBody)
+Vue.component("x-tabs-item", TabsItem)
+Vue.component("x-tabs-pane", TabsPane)
 
 
 new Vue({
