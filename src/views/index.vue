@@ -1,89 +1,56 @@
 <template>
 <div class="index">
+  <x-popover>
+    <x-button>上方弹出</x-button>
+    <template slot="content">
+      弹出内容
+    </template>
+  </x-popover>
+  <x-popover position="bottom">
+    <x-button>下方弹出</x-button>
+    <template slot="content">
+      弹出内容
+    </template>
+  </x-popover>
+  <x-popover position="left">
+    <x-button>左边弹出</x-button>
+    <template slot="content">
+      弹出内容
+    </template>
+  </x-popover>
+  <x-popover position="right">
+    <x-button>右边弹出</x-button>
+    <template slot="content">
+      弹出内容
+    </template>
+  </x-popover>
+
   <div>
-    <x-row class="demoRow">
-      <x-col span="8">
-        <div class="demoCol">8</div>
-      </x-col>
-      <x-col span="8">
-        <div class="demoCol">8</div>
-      </x-col>
-      <x-col span="8">
-        <div class="demoCol">8</div>
-      </x-col>
-    </x-row>
-    <x-row class="demoRow">
-      <x-col span="6">
-        <div class="demoCol">6</div>
-      </x-col>
-      <x-col span="6">
-        <div class="demoCol">6</div>
-      </x-col>
-      <x-col span="6">
-        <div class="demoCol">6</div>
-      </x-col>
-      <x-col span="6">
-        <div class="demoCol">6</div>
-      </x-col>
-    </x-row>
-    <x-row class="demoRow">
-      <x-col span="4">
-        <div class="demoCol">4</div>
-      </x-col>
-      <x-col span="4">
-        <div class="demoCol">4</div>
-      </x-col>
-      <x-col span="4">
-        <div class="demoCol">4</div>
-      </x-col>
-      <x-col span="4">
-        <div class="demoCol">4</div>
-      </x-col>
-      <x-col span="4">
-        <div class="demoCol">4</div>
-      </x-col>
-      <x-col span="4">
-        <div class="demoCol">4</div>
-      </x-col>
-    </x-row>
-    <x-row class="demoRow">
-      <x-col span="2">
-        <div class="demoCol">2</div>
-      </x-col>
-      <x-col span="2">
-        <div class="demoCol">2</div>
-      </x-col>
-      <x-col span="2">
-        <div class="demoCol">2</div>
-      </x-col>
-      <x-col span="2">
-        <div class="demoCol">2</div>
-      </x-col>
-      <x-col span="2">
-        <div class="demoCol">2</div>
-      </x-col>
-      <x-col span="2">
-        <div class="demoCol">2</div>
-      </x-col>
-      <x-col span="2">
-        <div class="demoCol">2</div>
-      </x-col>
-      <x-col span="2">
-        <div class="demoCol">2</div>
-      </x-col>
-      <x-col span="2">
-        <div class="demoCol">2</div>
-      </x-col>
-      <x-col span="2">
-        <div class="demoCol">2</div>
-      </x-col>
-      <x-col span="2">
-        <div class="demoCol">2</div>
-      </x-col>
-      <x-col span="2">
-        <div class="demoCol">2</div>
-      </x-col>
-    </x-row>
+    <x-popover trigger="hover">
+      <x-button>上方弹出</x-button>
+      <template slot="content">
+        弹出内容
+      </template>
+    </x-popover>
+    <x-popover position="bottom" trigger="hover">
+      <x-button>下方弹出</x-button>
+      <template slot="content">
+        弹出内容
+      </template>
+    </x-popover>
+    <x-popover position="left" trigger="hover">
+      <x-button>左边弹出</x-button>
+      <template slot="content">
+        弹出内容
+      </template>
+    </x-popover>
+    <x-popover position="right" trigger="hover">
+      <x-button>右边弹出</x-button>
+      <template slot="content">
+        弹出内容
+      </template>
+    </x-popover>
+
   </div>
 </div>
 </template>
