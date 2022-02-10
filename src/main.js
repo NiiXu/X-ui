@@ -11,6 +11,11 @@ import Input from "./components/input"
 import Col from "./components/Col";
 import Row from "./components/Row";
 import Popover from "./components/Popover";
+import Layout from "./components/Layout";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Content from "./components/Content";
+import Sider from "./components/Sider";
 
 Vue.config.productionTip = false
 
@@ -23,6 +28,13 @@ Vue.component('x-input',Input)
 Vue.component('x-col',Col)
 Vue.component('x-row', Row)
 Vue.component("x-popover",Popover)
+Vue.component('x-layout',Layout)
+Vue.component('x-header',Header)
+Vue.component('x-content',Content)
+Vue.component('x-footer',Footer)
+Vue.component('x-sider',Sider)
+
+
 
 new Vue({
   router,
