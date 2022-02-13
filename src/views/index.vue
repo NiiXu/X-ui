@@ -1,39 +1,13 @@
 <template>
 <div class="index">
-
-  <div>
-    <x-button @click="$toast('点击弹出提示')">上方弹出</x-button>
-    <x-button @click="$toast('点击弹出提示', {position:'middle'})">中间弹出</x-button>
-    <x-button @click="$toast('点击弹出提示', {position:'bottom'})">下方弹出</x-button>
-    <x-button @click="onClickButton">上方弹出</x-button>
-  </div>
-
-
-  <x-tabs :selected.sync="selectedTab" @update:selected="yyy">
+  <x-tabs :selected="selected">
     <x-tabs-head>
-      <template slot="actions">
-        <button>设置</button>
-      </template>
-      <x-tabs-item name="woman">
-        <x-icon name="settings"></x-icon>美女
-      </x-tabs-item>
-      <x-tabs-item name="finance" >
-        财经
-      </x-tabs-item>
-      <x-tabs-item name="sports">
-        体育
-      </x-tabs-item>
+      <x-tabs-item name="1">1</x-tabs-item>
+      <x-tabs-item name="2">2</x-tabs-item>
     </x-tabs-head>
     <x-tabs-body>
-      <x-tabs-pane name="woman">
-        美女相关资讯
-      </x-tabs-pane>
-      <x-tabs-pane name="finance">
-        财经相关资讯
-      </x-tabs-pane>
-      <x-tabs-pane name="sports">
-        体育相关资讯
-      </x-tabs-pane>
+      <x-tabs-pane name="1">content 1</x-tabs-pane>
+      <x-tabs-pane name="2">content 2</x-tabs-pane>
     </x-tabs-body>
   </x-tabs>
 </div>
