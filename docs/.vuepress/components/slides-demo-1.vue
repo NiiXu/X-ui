@@ -26,6 +26,7 @@
   import Slides from '../../../src/components/Slides'
   import SlidesItem from '../../../src/components/Slides-item'
 
+
   export default {
     components: {
       'x-slides':Slides, 'x-slides-item':SlidesItem

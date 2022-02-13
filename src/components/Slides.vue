@@ -19,16 +19,16 @@
         {{n}}
       </span>
       <span @click="onClickNext" data-action="next">
-        <g-icon name="right"></g-icon>
+        <x-icon name="right"></x-icon>
       </span>
     </div>
   </div>
 </template>
 
 <script>
-import GIcon from './Icon'
+import XIcon from './Icon'
 export default {
-  components: {GIcon},
+  components: {XIcon},
   props: {
     selected: {
       type: String,

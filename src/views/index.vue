@@ -1,16 +1,15 @@
 <template>
-<div class="index">
-  <x-tabs :selected="selected">
-    <x-tabs-head>
-      <x-tabs-item name="1">1</x-tabs-item>
-      <x-tabs-item name="2">2</x-tabs-item>
-    </x-tabs-head>
-    <x-tabs-body>
-      <x-tabs-pane name="1">content 1</x-tabs-pane>
-      <x-tabs-pane name="2">content 2</x-tabs-pane>
-    </x-tabs-body>
-  </x-tabs>
-</div>
+  <x-slides :selected.sync="selected">
+    <x-slides-item name="1">
+      <div class="box">1</div>
+    </x-slides-item>
+    <x-slides-item name="2">
+      <div class="box">2</div>
+    </x-slides-item>
+    <x-slides-item name="3">
+      <div class="box">3</div>
+    </x-slides-item>
+  </x-slides>
 </template>
 
 <script>
@@ -46,6 +45,15 @@ html {
   --color: #333;
   --border-color: #999;
   --border-color-hover: #666;
+}
+.box{
+  height: 300px;
+  background: blue;
+  color: white;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #app {
 }
