@@ -23,6 +23,8 @@ import TabsHead from "./components/Tabs-head";
 import TabsBody from "./components/Tabs-body";
 import TabsItem from "./components/Tabs-item";
 import TabsPane from "./components/Tabs-pane";
+import plugin from "./components/plugin"
+import Toast from "@/components/Toast";
 
 Vue.config.productionTip = false
 
@@ -48,6 +50,8 @@ Vue.component("x-tabs-head", TabsHead)
 Vue.component("x-tabs-body", TabsBody)
 Vue.component("x-tabs-item", TabsItem)
 Vue.component("x-tabs-pane", TabsPane)
+Vue.component('x-toast',Toast)
+Vue.use(plugin)
 
 
 new Vue({

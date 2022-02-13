@@ -45,7 +45,8 @@ export default {
 
 <style lang="scss">
 .my-radio {
-  border: 1px solid #606266;
+  border: 1.5px solid #606266;
+  border-radius: 8px;
   color: #606266;
   font-weight: 500;
   line-height: 1;
